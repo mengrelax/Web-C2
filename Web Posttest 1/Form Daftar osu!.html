@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+       <meta name="viewport" content="wicth=device">
+       <link rel="stylesheet" href="Form Daftar osu!.css">
+       <title>Selamat datang di turnamen osu!</title>
+    </head>
+    <body>
+        <header>
+            <h1>Turnamen osu!</h1>
+        </header>
+        <nav>
+            <a href="Beranda.html">Beranda</a>
+            <a href="Form Daftar osu!.html">Form Pendaftaran</a>
+            <a href="Jadwal Turnamen.html">Jadwal Turnamen</a>
+            <a href="Profil.html">Profiil</a>
+        </nav>
+        <head>
+            <h2>Form Pendaftaran Turnamen</h2>
+        </head>
+        <form>
+            <label for="nama">Nama Akun:</label>
+            <input type="text" id="nama" name="nama" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="jenis-kelamin">Jenis Kelamin:</label>
+            <div class="radio-group">
+                <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki">
+                <label for="laki-laki">Laki-laki</label>
+    
+                <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+    
+            <label for="mode yang sering digunakan">Mod yang sering digunakan:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="hard rock" name="mode yang sering digunakan[]" value="hard rock">
+                <label for="hard rock">Hard Rock</label>
+
+                <input type="checkbox" id="hidden" name="mode yang sering digunakan[]" value="hidden">
+                <label for="hidden">Hidden</label>
+
+                <input type="checkbox" id="double time" name="mode yang sering digunakan[]" value="double time">
+                <label for="double time">Double Time</label>
+
+                <input type="checkbox" id="flash light" name="mode yang sering digunakan[]" value="flash light">
+                <label for="double time">Flash Light</label>
+            </div>
+    
+            <label for="pekerjaan">Di tim sebagai:</label>
+            <select id="pekerjaan" name="pekerjaan">
+                <option value="">-- Pilih --</option>
+                <option value="kapten">Kapten</option>
+                <option value="pemain">Pemain</option>
+                <option value="cadangan">Cadangan</option>
+            </select>
+    
+            <label for="foto">Foto Profil:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+    
+            <input type="submit" value="Daftar">
+        </form>
+    </body>
+</html>
